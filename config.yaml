@@ -51,3 +51,22 @@ spi:
 sdcard:
   card_detect_pin: NO_PIN
   cs_pin: gpio.5
+
+control:
+
+coolant:
+
+probe:
+  pin: gpio.2:low:pu
+
+macros:
+  startup_line0:
+  startup_line1:
+  macro0:
+  macro1:
+  macro2:
+  macro3:
+
+user_outputs:
+
+start:
