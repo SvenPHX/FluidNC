@@ -1,6 +1,6 @@
 board: Root CNC
-name: Root CNC FluicNC Tinkering
-meta: things
+name: Onefinity RootCNC FluicNC
+meta: Operating Configuration
 
 stepping:
   engine: I2S_STREAM
@@ -38,6 +38,72 @@ axes:
         step_pin: I2SO.7:low
         direction_pin: I2SO.5:low
         disable_pin: I2SO.3:high
+
+  y:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 819.150
+    soft_limits: true
+    homing:
+      cycle: 2
+      allow_single_axis: true
+      positive_direction: false
+      mpos_mm: 10.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 20.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.32
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 10.000
+      standard_stepper:
+        step_pin: I2SO.12:low
+        direction_pin: I2SO.10:low
+        disable_pin: I2SO.8:high
+
+    motor1:
+      limit_neg_pin: gpio.26
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 10.000
+      standard_stepper:
+        step_pin: I2SO.6:low
+        direction_pin: I2SO.4:low
+        disable_pin: I2SO.2:high
+  z:
+    steps_per_mm: 400.000
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 150
+    soft_limits: true
+    homing:
+      cycle: 2
+      allow_single_axis: true
+      positive_direction: false
+      mpos_mm: 10.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 20.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: gpio.27
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 10.000
+      standard_stepper:
+        step_pin: I2SO.18:low
+        direction_pin: I2SO.16:low
+        disable_pin: I2SO.14:high
 
 i2so:
   bck_pin: gpio.22
