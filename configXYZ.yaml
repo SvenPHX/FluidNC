@@ -1,5 +1,6 @@
 board: Root CNC
-name: Root CNC FluicNC XYYZ v0.1
+name: Onefinity RootCNC FluicNC
+meta: Operating Configuration
 
 stepping:
   engine: I2S_STREAM
