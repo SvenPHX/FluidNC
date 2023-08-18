@@ -1,5 +1,6 @@
 board: Root CNC
 name: Root CNC FluicNC Tinkering
+meta: tinkering
 
 stepping:
   engine: I2S_STREAM
