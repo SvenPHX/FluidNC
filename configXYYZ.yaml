@@ -78,7 +78,7 @@ axes:
         direction_pin: I2SO.4:high
         disable_pin: I2SO.2:high
   z:
-    steps_per_mm: 160.000
+    steps_per_mm: 400.000
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
     max_travel_mm: 150
