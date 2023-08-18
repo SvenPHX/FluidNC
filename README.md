@@ -1,8 +1,10 @@
 # FluidNC
 FluidNC configs
 
-config.yaml - initial test and tinkering (don't use)
+config.yaml - Current working config
 
-configX.yaml - basic tinkering (don't use)
+configX.yaml - don't use
 
-configXYZ.yaml - Current working config
+configXYZ.yaml - don't use
+
+configXYYZ.yaml - don't use
