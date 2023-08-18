@@ -1,5 +1,4 @@
-# FluidNC
-FluidNC configs
+# FluidNC Configurations
 
 config.yaml - Current working config
 
