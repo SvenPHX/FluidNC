@@ -12,7 +12,7 @@ stepping:
 axes:
   shared_stepper_disable_pin: NO_PIN
   x:
-    steps_per_mm: 160.000
+    steps_per_mm: 160.030
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
     max_travel_mm: 819.150
@@ -40,7 +40,7 @@ axes:
         disable_pin: I2SO.3:high
 
   y:
-    steps_per_mm: 160.000
+    steps_per_mm: 159.970
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
     max_travel_mm: 819.150
@@ -78,7 +78,7 @@ axes:
         direction_pin: I2SO.4:low
         disable_pin: I2SO.2:high
   z:
-    steps_per_mm: 400.000
+    steps_per_mm: 401.77
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
     max_travel_mm: 150
