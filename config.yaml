@@ -95,7 +95,7 @@ axes:
     #  feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: gpio.27
+      limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
     #  hard_limits: true
