@@ -11,6 +11,8 @@ stepping:
 
 axes:
   shared_stepper_disable_pin: NO_PIN
+  shared_stepper_reset_pin: NO_PIN
+  
   x:
     steps_per_mm: 160.030
     max_rate_mm_per_min: 5000.000
@@ -22,8 +24,8 @@ axes:
       allow_single_axis: true
       positive_direction: false
       mpos_mm: 10.000
-      feed_mm_per_min: 250.000
-      seek_mm_per_min: 500.000
+      feed_mm_per_min: 750.000
+      seek_mm_per_min: 2500.000
       settle_ms: 500
       seek_scaler: 1.100
       feed_scaler: 1.100
@@ -50,8 +52,8 @@ axes:
       allow_single_axis: true
       positive_direction: false
       mpos_mm: 10.000
-      feed_mm_per_min: 250.000
-      seek_mm_per_min: 500.000
+      feed_mm_per_min: 750.000
+      seek_mm_per_min: 2500.000
       settle_ms: 500
       seek_scaler: 1.100
       feed_scaler: 1.100
