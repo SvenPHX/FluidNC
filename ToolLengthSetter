@@ -1,0 +1,37 @@
+G54; Work Coordinates
+G21; mm-mode
+G90; Absolute Positioning
+
+; Home
+$HXY
+
+; Option #1
+; Move to probe location
+G0 F1000 X141.9208 Y77.2406
+; Touch off on probe
+G38.2 Z-30 F500
+; Set Z
+G10 L20 Z-3
+
+; Option #2
+G92.1
+G53 G0 Z0
+G59
+G0 X0 Y0
+G0 Z0
+G91
+G38.2 Z-90 F300
+G0 Z2
+G38.2 Z-10 F30
+G4 P.25
+G38.4 Z10 F20
+G4 P.25
+G38.2 Z-10 F10
+G4 P.25
+G38.4 Z10 F5
+G4 P.25
+G92 Z0
+G0 Z5 F3000
+G90
+G53 G0 Z0 F3000
+G54
