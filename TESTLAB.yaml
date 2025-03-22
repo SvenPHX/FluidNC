@@ -1,6 +1,6 @@
-board: TESTLAB-ESP32-DevKit
+board: ESP32-Devkit
 name: Onefinity-FluicNC
-meta: Testing Configuration
+meta: Basic Minimal
 
 stepping:
   engine: I2S_STREAM
@@ -83,8 +83,8 @@ axes:
     steps_per_mm: 401.77
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
-    # max_travel_mm: 150
-    soft_limits: false
+    #max_travel_mm: 150
+    #soft_limits: false
     #homing:
     #  cycle: 2
     #  allow_single_axis: true
