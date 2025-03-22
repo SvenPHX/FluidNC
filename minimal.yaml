@@ -1,6 +1,6 @@
 board: ESP32-Devkit
-name: Onefinity-FluicNC
-meta: Basic Minimal
+name: FluicNC
+meta: Minimal
 
 stepping:
   engine: I2S_STREAM
