@@ -126,7 +126,7 @@ control:
 coolant:
 
 probe:
-  pin: gpio.2:pu
+  pin: gpio.2:pu:high
 
 macros:
   startup_line0:
