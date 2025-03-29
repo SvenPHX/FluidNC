@@ -19,7 +19,7 @@
 +                     Removing M30 from Footer.
 + ======== ========== ===========================
 
-POST_NAME = "Grbl (mm) (*.gcode)"
+POST_NAME = "Grbl (mm) (*.gcode) (edited)"
  
 FILE_EXTENSION = "gcode"
  
@@ -69,12 +69,10 @@ VAR Z_HOME_POSITION = [ZH|A|Z|1.4]
  
 begin HEADER
  
-"T1"
-"G17"
 "G21"
 "G90"
 "G0[ZH]"
-"G0[XH][YH][S]M3"
+"G0[XH][YH]"
  
  
 +---------------------------------------------------
@@ -148,4 +146,3 @@ begin FOOTER
  
 "G0[ZH]"
 "G0[XH][YH]"
-"M02"
