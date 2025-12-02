@@ -1,4 +1,4 @@
-board: ESP32-Devkit
+board: ESP32
 name: FluicNC
 meta: Minimal
 
@@ -139,4 +139,5 @@ macros:
 user_outputs:
 
 start:
+
 
