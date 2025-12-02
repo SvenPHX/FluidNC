@@ -31,7 +31,7 @@ axes:
       #feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: gpio.34
+      limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       #hard_limits: true
@@ -59,7 +59,7 @@ axes:
     #  feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: gpio.32
+      limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       #hard_limits: true
@@ -70,7 +70,7 @@ axes:
         disable_pin: I2SO.8:high
 
     motor1:
-      limit_neg_pin: gpio.26
+      limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       #hard_limits: true
@@ -139,3 +139,4 @@ macros:
 user_outputs:
 
 start:
+
