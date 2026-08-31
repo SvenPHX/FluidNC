@@ -1,8 +1,14 @@
 board: Root CNC
 name: Onefinity RootCNC FluicNC
-meta: Operating Configuration (8/25/26)
+meta: Operating Configuration (8/30/26)
+
+##
+## Better have all end stops in place for this configuration.
+## See inline remarks
+##
 
 start:
+  ## Set false to turn off start up homing
   must_home: true
 
 stepping:
@@ -10,7 +16,7 @@ stepping:
   idle_ms: 255
   pulse_us: 4
   dir_delay_us: 1
-  disable_delay_us: 3
+  disable_delay_us: 0
 
 axes:
   shared_stepper_disable_pin: NO_PIN
@@ -18,10 +24,13 @@ axes:
   
   x:
     steps_per_mm: 160.030
+    ## Should find a way to tune these two on all axis.
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
+    
     max_travel_mm: 819.150
     soft_limits: true
+    
     homing:
       cycle: 2
       allow_single_axis: true
@@ -50,6 +59,7 @@ axes:
     acceleration_mm_per_sec2: 500.000
     max_travel_mm: 819.150
     soft_limits: true
+    
     homing:
       cycle: 2
       allow_single_axis: true
@@ -82,11 +92,13 @@ axes:
         step_pin: I2SO.6:low
         direction_pin: I2SO.4:low
         disable_pin: I2SO.2:high
+
   z:
     steps_per_mm: 401.77
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
-    max_travel_mm: 150  ## ACTUALLY MEASURE THIS ##
+    ## ACTUALLY MEASURE THIS ##
+    max_travel_mm: 150
     soft_limits: true
     homing:
       cycle: 1
@@ -147,5 +159,5 @@ macros:
   macro1:
   macro2:
   macro3:
-
+  
 user_outputs:
