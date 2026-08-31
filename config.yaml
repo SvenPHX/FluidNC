@@ -3,13 +3,13 @@ name: Onefinity RootCNC FluicNC
 meta: Operating Configuration (8/30/26)
 
 ##
-## Better have all end stops in place for this configuration.
+## Better have all end stops in place to turn on must_home in this configuration.
 ## See inline remarks
 ##
 
 start:
   ## Set false to turn off start up homing
-  must_home: true
+  must_home: false
 
 stepping:
   engine: I2S_STREAM
