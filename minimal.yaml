@@ -17,25 +17,11 @@ axes:
     steps_per_mm: 160.030
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
-    #max_travel_mm: 819.150
-    #soft_limits: true
-    #homing:
-      #cycle: 2
-      #allow_single_axis: true
-      #positive_direction: false
-      #mpos_mm: 10.000
-      #feed_mm_per_min: 750.000
-      #seek_mm_per_min: 2500.000
-      #settle_ms: 500
-      #seek_scaler: 1.100
-      #feed_scaler: 1.100
 
     motor0:
       limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
-      #hard_limits: true
-      #pulloff_mm: 10.000
       standard_stepper:
         step_pin: I2SO.7:low
         direction_pin: I2SO.5:low
@@ -45,25 +31,11 @@ axes:
     steps_per_mm: 159.970
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
-    #max_travel_mm: 819.150
-    #soft_limits: true
-    #homing:
-    #  cycle: 2
-    #  allow_single_axis: true
-    #  positive_direction: false
-    #  mpos_mm: 10.000
-    #  feed_mm_per_min: 750.000
-    #  seek_mm_per_min: 2500.000
-    #  settle_ms: 500
-    #  seek_scaler: 1.100
-    #  feed_scaler: 1.100
 
     motor0:
       limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
-      #hard_limits: true
-      #pulloff_mm: 10.000
       standard_stepper:
         step_pin: I2SO.12:low
         direction_pin: I2SO.10:low
@@ -73,35 +45,20 @@ axes:
       limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
-      #hard_limits: true
-      #pulloff_mm: 10.000
       standard_stepper:
         step_pin: I2SO.6:low
         direction_pin: I2SO.4:low
         disable_pin: I2SO.2:high
+  
   z:
     steps_per_mm: 401.77
     max_rate_mm_per_min: 5000.000
     acceleration_mm_per_sec2: 500.000
-    #max_travel_mm: 150
-    #soft_limits: false
-    #homing:
-    #  cycle: 2
-    #  allow_single_axis: true
-    #  positive_direction: true
-    #  mpos_mm: 10.000
-    #  feed_mm_per_min: 100.000
-    #  seek_mm_per_min: 20.000
-    #  settle_ms: 500
-    #  seek_scaler: 1.100
-    #  feed_scaler: 1.100
 
     motor0:
       limit_neg_pin: NO_PIN
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
-    #  hard_limits: true
-    #  pulloff_mm: 10.000
       standard_stepper:
         step_pin: I2SO.18:low
         direction_pin: I2SO.16:low
@@ -120,24 +77,3 @@ spi:
 sdcard:
   card_detect_pin: NO_PIN
   cs_pin: gpio.5
-
-control:
-
-coolant:
-
-probe:
-  pin: gpio.2:pu:high
-
-macros:
-  startup_line0:
-  startup_line1:
-  macro0:
-  macro1:
-  macro2:
-  macro3:
-
-user_outputs:
-
-start:
-
-
